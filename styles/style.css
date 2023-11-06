@@ -254,24 +254,26 @@ fieldset {
 }
 
 input[type="checkbox"] + span {
-  position: relative;
   display: inline-block;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   vertical-align: middle;
   cursor: pointer;
+  text-align: center;
+  line-height: 19px;
 }
 
 input[type="checkbox"]:checked + span::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  content: '';
+  display: inline-block;
   width: 15px;
   height: 15px;
   background-color: #fff;
-  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 
 .search-form__label-text {
