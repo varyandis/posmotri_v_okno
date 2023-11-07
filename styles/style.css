@@ -58,7 +58,6 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
   max-width: 711px;
@@ -79,7 +78,9 @@ ol {
   width: 100%;
   height: 100%;
   padding: 3px 3px;
-  overflow-x: hidden;
+  white-space: nowrap;
+  overflow-x: hidden; 
+  overflow-y: auto;
 }
 
 .result__video-container {
